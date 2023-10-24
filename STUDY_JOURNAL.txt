@@ -1,0 +1,18 @@
+Date: Tuesday, 24, October 2023
+Title: Built-In Superglobal Variables in PHP
+
+What I've learned:
+$_SERVER: Contains information about the server and the execution environment.
+$_GET: Stores data sent to the script via URL parameters.
+$_POST: Holds data submitted through an HTML form using the POST method.
+$_FILES: Used for file uploads, containing information about uploaded files.
+$_REQUEST: Combines data from $_GET, $_POST, and $_COOKIE, making it a versatile option.
+$_SESSION: Manages session variables for storing user-specific data across page requests.
+$_ENV: Stores environment variables of the server or system.
+$_COOKIE: Manages cookies sent by the client's browser.
+
+Summary: 
+Today, I delved into PHP's superglobal variables. 
+These essential variables serve various purposes, 
+from retrieving user input to managing sessions and server-related information. 
+Understanding how to use these superglobals is crucial for building dynamic and interactive web applications in PHP.
