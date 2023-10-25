@@ -1,0 +1,63 @@
+body {
+  background-color: #000;
+}
+form,
+label,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Style the form container */
+main {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style the form */
+form {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style input and select elements */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #0056b3;
+}
