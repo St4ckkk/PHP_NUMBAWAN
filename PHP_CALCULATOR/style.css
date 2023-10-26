@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 40px;
+}
+
+button {
+  background-color: #0074d9;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056a4;
+}
+
+.calc-error {
+  color: #ff0000; /* Red text color for error message */
+  font-size: 16px; /* Font size for the error message */
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+.calc-result {
+  color: #008000; /* Green text color for the result message */
+  font-size: 18px; /* Font size for the result message */
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Add some margin for spacing */
+}
