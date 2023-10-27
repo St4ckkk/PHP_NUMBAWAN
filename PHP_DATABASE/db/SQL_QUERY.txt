@@ -1,0 +1,8 @@
+INSERT INTO users_tb(username, pwd, email) VALUES('TEST', '123', 'TEST@gmail.com');
+UPDATE users_tb SET username = 'TEST-234', pwd = '123456' WHERE id = 2;
+DELETE FROM users_tb WHERE id = 1;
+SELECT username, email FROM users_tb WHERE id = 1;
+SELECT * FROM comments;
+SELECT * FROM users_tb INNER JOIN comments ON users_tb.id = comments.users_id;
+SELECT * FROM users_tb LEFT JOIN comments ON users_tb.id = comments.users_id;
+SELECT * FROM users_tb RIGHT JOIN comments ON users_tb.id = comments.users_id;
