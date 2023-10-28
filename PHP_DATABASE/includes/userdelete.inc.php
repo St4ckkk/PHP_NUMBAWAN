@@ -2,27 +2,20 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $pwd = $_POST['password'];
-    $email = $_POST['email'];
 
-    if (empty($username) || empty($pwd) || empty($email)) {
-        header('Location: ../index.php');
-        exit();
-    }
     try {
         // check if we already include the database
         require_once "dbh.inc.php";
         #require
         #include
         #include_once
-        $query = "INSERT INTO users_tb (username, pwd, email) VALUES(:username, :pwd, :email)";
+        $query = "DELETE FROM users_tb WHERE username = :username AND pwd = :pwd; ";
 
         // PASSING THE QUERY TO DATABASE
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':pwd', $pwd);
-        $stmt->bindParam(':email', $email);
         $stmt->execute();
-
 
         #$stmt->execute([$username, $pwd, $email]);
 

@@ -4,17 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pwd = $_POST['password'];
     $email = $_POST['email'];
 
-    if (empty($username) || empty($pwd) || empty($email)) {
-        header('Location: ../index.php');
-        exit();
-    }
     try {
         // check if we already include the database
         require_once "dbh.inc.php";
         #require
         #include
         #include_once
-        $query = "INSERT INTO users_tb (username, pwd, email) VALUES(:username, :pwd, :email)";
+        $query = "UPDATE users_tb SET username = :username, pwd = :pwd email = :email WHERE id = ;";
 
         // PASSING THE QUERY TO DATABASE
         $stmt = $pdo->prepare($query);
@@ -22,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':pwd', $pwd);
         $stmt->bindParam(':email', $email);
         $stmt->execute();
-
 
         #$stmt->execute([$username, $pwd, $email]);
 
